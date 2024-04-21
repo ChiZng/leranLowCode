@@ -8,13 +8,61 @@ importers:
 
   .: {}
 
-  packages/core: {}
+  packages/canvas:
+    dependencies:
+      reset-css:
+        specifier: ^5.0.2
+        version: 5.0.2
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.21(typescript@5.2.2)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vite@5.2.0)(vue@3.4.21)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+      vite:
+        specifier: ^5.2.0
+        version: 5.2.0
+      vue-tsc:
+        specifier: ^2.0.6
+        version: 2.0.6(typescript@5.2.2)
+
+  packages/core:
+    dependencies:
+      reset-css:
+        specifier: ^5.0.2
+        version: 5.0.2
+      vue:
+        specifier: ^3.4.21
+        version: 3.4.21(typescript@5.2.2)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vite@5.2.0)(vue@3.4.21)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+      vite:
+        specifier: ^5.2.0
+        version: 5.2.0
+      vue-tsc:
+        specifier: ^2.0.6
+        version: 2.0.6(typescript@5.2.2)
 
   packages/design-demo:
     dependencies:
+      '@aprchell/core':
+        specifier: workspace:*
+        version: link:../core
       element-plus:
         specifier: ^2.7.1
         version: 2.7.1(vue@3.4.21)
+      reset-css:
+        specifier: ^5.0.2
+        version: 5.0.2
       vue:
         specifier: ^3.4.21
         version: 3.4.21(typescript@5.2.2)
@@ -791,6 +839,10 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.2.0
+
+  /reset-css@5.0.2:
+    resolution: {integrity: sha512-YtgUGSq5z5W0NPSjsBW7ys7rtWa8P8AiE7S6Fg3d1TQCPpAodgYyLuZYlU0AOsLtprk/fC9ormHN/0pAavVIDw==}
+    dev: false
 
   /rollup@4.15.0:
     resolution: {integrity: sha512-i0ir57IMF5o7YvNYyUNeIGG+IZaaucnGZAOsSctO2tPLXlCEaZzyBa+QhpHNSgtpyLMoDev2DyN6a7J1dQA8Tw==}

@@ -1,9 +1,8 @@
 {
-  "name": "@aprchell/core",
+  "name": "@aprchell/canvas",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "module": "src/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
